@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85EA8A"
+    tools:context=".Modalidade">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="70dp"
+        android:text="Quantos quilómetros você pretende percorrer?"
+        android:textColor="#3B6F41"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/objetivo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="70dp"
+        android:text="Em que tipo de terreno você vai andar"
+        android:textColor="#3B6F41"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distancia" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="70dp"
+        android:text="Qual o seu objetivo com sua nova bicicleta?"
+        android:textColor="#3B6F41"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/objetivo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/locomocao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Locomoção "
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/esporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Esporte"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/treino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treino"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/distancia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/leve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 a 25 Km"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/medio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26 a 60 Km"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/alto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="61+  Km"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/terreno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/asfalto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asfalto"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/estrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estrada de chão"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/misto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Misto"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="17dp"
+        android:background="#00FFFFFF"
+        android:onClick="TelaMedidas"
+        android:text="Proximo"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terreno" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
